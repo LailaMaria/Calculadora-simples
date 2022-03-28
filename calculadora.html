@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto:ital,wght@0,400;0,700;1,500 & display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="calculator">
+            <p class="result" id = resultado></p>
+            <table>
+                <tr>
+                    <td><button class="bt ac" style="width: 106px" onclick="limpar()">AC</button></td>
+                    <td><button class="bt bs" onclick="backspace()">&#9003</button></td>
+                    <td><button class="bt op" onclick="inserir('/')">÷</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bt" onclick="inserir('7')">7</button></td>
+                    <td><button class="bt" onclick="inserir('8')">8</button></td>
+                    <td><button class="bt" onclick="inserir('9')">9</button></td>
+                    <td><button class="bt op" onclick="inserir('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bt" onclick="inserir('4')">4</button></td>
+                    <td><button class="bt" onclick="inserir('5')">5</button></td>
+                    <td><button class="bt" onclick="inserir('6')">6</button></td>
+                    <td><button class="bt op" onclick="inserir('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bt" onclick="inserir('1')">1</button></td>
+                    <td><button class="bt" onclick="inserir('2')">2</button></td>
+                    <td><button class="bt" onclick="inserir('3')">3</button></td>
+                    <td><button class="bt op" onclick="inserir('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bt" onclick="inserir('0')">0</button></td>
+                    <td><button class="bt" onclick="inserir('.')">.</button></td>
+                    <td><button class="bt igual" style="width: 106px" onclick="confirma()">=</button></td>
+                </tr>
+
+            </table>
+        </div>       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
