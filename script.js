@@ -1,5 +1,5 @@
 const resultado = document.querySelector('.result')
-//Commit with friend - Yasmin
+//Commit with friend - Yasmin 3
 
 function inserir(valor){
     resultado.innerHTML += valor;
